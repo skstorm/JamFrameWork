@@ -25,9 +25,9 @@ namespace Jam
             }
 
             // 状態をロードする前に先にメインObjectのDiを初期化する必要がある
-            var singletonManagerPrefab = Resources.Load<SingletonManager>(Const.PathSingletonManagerPrefab);
+            var singletonManagerPrefab = ResourcesManager.Load<SingletonManager>(Const.PathSingletonManagerPrefab);
             var singletonManager = GameObject.Instantiate<SingletonManager>(singletonManagerPrefab);
-            var origin = Resources.Load<MainGameObject>(Const.PathMainGameObjectPrefab);
+            var origin = ResourcesManager.Load<MainGameObject>(Const.PathMainGameObjectPrefab);
             var mainGameObj = GameObject.Instantiate<MainGameObject>(origin);
             mainGameObj.Init();
 
@@ -75,11 +75,15 @@ namespace Jam
 
         protected virtual void enterState() { }
         protected virtual void updateState() { }
-        protected virtual void exitState() { }
+
+        protected virtual void exitState()
+        {
+            Destroy(gameObject);
+        }
 
         public virtual void Release()
         {
-            Destroy(this.gameObject);
+            Destroy(gameObject);
         }
     }
 }

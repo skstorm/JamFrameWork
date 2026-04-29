@@ -11,6 +11,7 @@ namespace Jam
         public static readonly string PathSingletonManagerPrefab = $"{PathPrefabsRoot}Core/SingletonManager";
 
         public static readonly string PathTitleScene = $"{PathPrefabsRoot}Scene/TitleScene";
+        public static readonly string PathInGameScene = $"{PathPrefabsRoot}Scene/InGameScene";
         
     }
 }
