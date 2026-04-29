@@ -12,7 +12,7 @@ namespace Jam
     public abstract class BaseState : IBaseState
     {
         protected IStateMachine _ownerFsm;
-
+        
         public BaseState(IStateMachine fsm)
         {
             _ownerFsm = fsm;

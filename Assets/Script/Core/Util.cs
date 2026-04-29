@@ -16,12 +16,12 @@ namespace Jam
         }
 
 
-        [Conditional("UMBER_DEBUG")]
+        [Conditional("JAM_DEBUG")]
         public static void DebugLog(string log)
         {
-#if UMBER_DEBUG
+#if JAM_DEBUG
             UnityEngine.Debug.Log(log);
-#endif // GAME_JAM_DEBUG
+#endif // JAM_DEBUG
         }
 
         public static float GetAnimationClipLength(Animator animator, string clipName)
