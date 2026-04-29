@@ -3,7 +3,7 @@ using System.Diagnostics;
 using UnityEngine;
 using System.Linq;
 
-namespace Umber
+namespace Jam
 {
     public class Util
     {

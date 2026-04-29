@@ -1,7 +1,7 @@
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 
-namespace Umber
+namespace Jam
 {
     public interface IStateMachine
     {

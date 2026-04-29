@@ -2,7 +2,7 @@ using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Umber
+namespace Jam
 {
     public interface IBaseStateBehaviour : IBaseState
     {

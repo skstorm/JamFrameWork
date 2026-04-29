@@ -1,4 +1,4 @@
-namespace Umber
+namespace Jam
 {
     public static class Const
     {

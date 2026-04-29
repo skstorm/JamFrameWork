@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace Umber
+namespace Jam
 {
     public class TouchPanelItem : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     {

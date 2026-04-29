@@ -1,6 +1,6 @@
 using Cysharp.Threading.Tasks;
 
-namespace Umber
+namespace Jam
 {
     public interface IBaseState
     {

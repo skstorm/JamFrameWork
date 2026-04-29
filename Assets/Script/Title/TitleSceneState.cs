@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Umber;
+using Jam;
 
-public class TitleSceneState : BaseStateBehaviour
+namespace Jam
 {
-    protected override BaseStateBehaviour LoadScenePrefab()
+    public class TitleSceneState : BaseStateBehaviour
     {
-        return Util.LoadScenePrefab<TitleSceneState>(Const.PathTitleScene, _owner);
+        protected override BaseStateBehaviour LoadScenePrefab()
+        {
+            return Util.LoadScenePrefab<TitleSceneState>(Const.PathTitleScene, _owner);
+        }
     }
 }

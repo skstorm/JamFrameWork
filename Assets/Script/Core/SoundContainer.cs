@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Umber
+namespace Jam
 {
     public class SoundContainer : MonoBehaviour
     {

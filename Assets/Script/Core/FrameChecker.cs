@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Umber
+namespace Jam
 {
     public class FrameChecker : MonoBehaviour
     {
