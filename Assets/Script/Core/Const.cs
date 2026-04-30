@@ -12,6 +12,7 @@ namespace Jam
 
         public static readonly string PathTitleScene = $"{PathPrefabsRoot}Scene/TitleScene";
         public static readonly string PathInGameScene = $"{PathPrefabsRoot}Scene/InGameScene";
+        public static readonly string PathTestScene = $"{PathPrefabsRoot}Scene/TestScene";
         
     }
 }
