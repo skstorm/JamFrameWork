@@ -17,13 +17,16 @@ namespace Jam
 
         public async UniTask Run(StateMachine stateMachine, IBaseStateBehaviour startState)
         {
-            //Localize.LanguageKind = ELanguageKind.En;
             Application.targetFrameRate = 60;
 
             DontDestroyOnLoad(this);
+            
+            LocalizeManager.Init(eLanguageKind.Jp);
 
             await stateMachine.RunAsync(startState);
             stateMachine.Release();
+            
+            LocalizeManager.Release();
         }
 #if UMBER_DEBUG
         private void Update()

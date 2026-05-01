@@ -6,6 +6,6 @@ namespace Jam
     {
         Jp = 0,
         En,
-        Ko,
+        Kr,
     }
 }
